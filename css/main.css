@@ -214,31 +214,40 @@ h1 span {
 
 /** MAIN AREA **/
 
+
+/** WATCH ME **/
+
 .watchme-wrapper {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin: 1em;
 }
 
+.latest-item,
 .seeme-item,
 .history-item,
 .tttr-item {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2em;
 }
 
-/** .tttr-item, 
-.videoWrapper {
-  padding: 0;
+.latest-item p,
+.history-item p,
+.tttr-item p {
+  padding: 0 1em 1em 1em;
+  text-align: justify;
 }
 
-/** WATCH ME **/
+   /** SEE ME **/
 
-.watchme-wrapper {
-  margin-top: 1em;
+.seeme-item h3 {
+padding-bottom: 1em;
 }
+
+/** VIDEOS **/
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -252,8 +261,10 @@ h1 span {
   height: 100%;
 }
 
+/** IMAGES **/
+
 .img-wrapper {
-  padding: 2em;
+  padding: 1em;
 }
 
 .caption {
@@ -264,22 +275,6 @@ h1 span {
 
 .smileimg {
   margin-top: 1em;
-}
-
-
-   /** SEE ME **/
-
-
-.seeme-item h3 {
-  padding-bottom: 1em;
-}
-
-  /** HISTORY & TTTR **/
-
-.history-item p,
-.tttr-item p {
-  padding: 0 1em 1em 1em;
-  text-align: justify;
 }
 
 
@@ -397,8 +392,8 @@ h1 span {
   z-index: 1;
   left: 30px;
   border: medium solid white;
-  border-width: 10px 1px0 10px 0;
-  border-color: transparent transparent transparent white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
 
 /* FIX CIRCLES FOR CONTAINERS RIGHT SIDE */
@@ -581,6 +576,14 @@ footer,
 
 @media all and (min-width: 768px) {
 
+  .latest-item,
+  .seeme-item,
+  .history-item,
+  .tttr-item {
+    display: flex;
+  }
+
+
   .reachme h2,
   .readme h2 {
     text-align: end;
@@ -626,6 +629,11 @@ footer,
 }
 
 @media all and (min-width: 1200px) {
+
+
+  .topnav a {
+    padding: 1em 1.5em 0;
+  }
 
   .readme,
   .knowme,
