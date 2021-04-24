@@ -1,0 +1,773 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  
+  
+   *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+
+/***   BASE STYLES  ***/
+
+  body
+   {
+    margin: 0;
+    background: #F7EDE2;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: #A61123;
+    max-width: 100%;
+  }
+
+  figure
+   {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0;
+    color: #656D2F;
+    font-family: 'courier prime', monospace;
+    font-size: 1.65em;
+    padding-left: .25em;
+  }
+
+  h2 {
+    color: #656D2F;
+    padding: 1em 0 2em;
+  }
+  
+  
+  h3 {
+    color: #C8AD4E;
+    text-transform: uppercase;
+    padding: 1.5em 0;
+  }
+
+  h4,
+  p {
+    font-family: 'courier prime', monospace;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    background-color: #656D2F;
+    color: #F7EDE2;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .75em;
+    margin: 1.5em;
+    padding: .75em;
+  }
+   .btn a {
+     text-decoration: none;
+     color: #F7EDE2;
+   }
+
+
+/** HEADER **/
+
+
+.title p {
+  margin: 0 .25em;
+}
+
+h1 span {
+  color: #A61123;
+  font-size: .5em;
+  text-transform: uppercase;
+}
+
+.header-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*** NAVIGATION ***/
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #A61123;
+  text-align: center;
+  padding: .5em 2.75em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.topnav i {
+  font-size: 1.75em;
+}
+
+.topnav a:hover {
+  color: #C8AD4E;
+}
+
+.topnav a.active {
+  border: .5em solid #656D2F;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav a.icon {
+  padding: .5em;
+}
+
+/** MAIN AREA **/
+
+.watchme-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.seeme-item,
+.history-item,
+.tttr-item {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+
+/** .tttr-item, 
+.videoWrapper {
+  padding: 0;
+}
+
+/** WATCH ME **/
+
+.watchme-wrapper {
+  margin-top: 1em;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+.img-wrapper {
+  padding: 2em;
+}
+
+.caption {
+  font-family: 'courier prime', monospace;
+  font-size: .75em;
+  margin: .75em;
+}
+
+.smileimg {
+  margin-top: 1em;
+}
+
+
+   /** SEE ME **/
+
+
+.seeme-item h3 {
+  padding-bottom: 1em;
+}
+
+  /** HISTORY & TTTR **/
+
+.history-item p,
+.tttr-item p {
+  padding: 0 1em 1em 1em;
+  text-align: justify;
+}
+
+
+/** READ ME **/
+
+.readme-wrapper {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  padding: 2em;
+}
+
+.readme h2,
+.knowme h2,
+.reachme h2 {
+  text-align: center;
+}
+
+.readme h3 {
+  padding-bottom: .3em;
+}
+
+.readme p,
+.knowme p {
+  text-align: justify;
+  padding-bottom: 1.5em;
+}
+
+
+/** KNOW ME **/
+
+.knowme-wrapper {
+  display: flex;
+  flex-flow: column;
+  padding: 2em;
+}
+
+/* actual timeline (vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* CONTAINER AROUND CONTENT */
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* CIRCLES ON TIMELINE */
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #fff;
+  border: 4px solid #656D2F;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* PLACE CONTAINER LEFT */
+
+.left {
+  left: 0;
+}
+
+/* PLACE CONTAINER RIGHT */
+
+.right {
+  left: 50%;
+}
+
+/* ADD ARROWS TO THE LEFT CONTAINER POINTING RIGHT */
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* ADD ARROWS TO THE RIGHT CONTAINER POINTING LEFT */
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 1px0 10px 0;
+  border-color: transparent transparent transparent white;
+}
+
+/* FIX CIRCLES FOR CONTAINERS RIGHT SIDE */
+
+.right::after {
+  left: -12px;
+}
+
+/* ACTUAL CONTENT */
+
+.content {
+  padding: .5em;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content h2 {
+  padding: 0;
+}
+
+.content p {
+  padding: .5em 0 .3em 0;
+}
+
+/** FOOTER **/
+
+footer,
+.reachme {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  padding: 1.5em;
+}
+
+.reachme h3 {
+  padding: .5em 0;
+}
+
+.social-icons {
+  margin: 1em 0;
+  display: flex;
+}
+
+.social-icons i {
+  color: #656D2F;
+  font-size: 1.5em;
+  padding: 0 .25em;
+}
+
+.reachme-img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires. FOR MENU
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+} 
+
+@media all and (min-width: 769px) {
+
+  .topnav a {
+    padding: 1em .75em 0;
+  }
+}
+
+/** TABLET AND DESKTOP STYLES **/
+
+@media all and (min-width: 768px) {
+
+  .reachme h2,
+  .readme h2 {
+    text-align: end;
+  }
+  
+  .knowme h2 {
+    text-align: left;
+  }
+
+  .readme,
+  .knowme,
+  .reachme {
+    padding: 6em;
+  }
+
+  .readme h3,
+  .readme p {
+    padding-right: 10em;
+  }
+
+  .knowme p {
+    padding-left: 10em;
+  }
+
+  .content p {
+    padding: .5em;
+  }
+
+  .img-wrapper {
+    display: flex;
+    
+  }
+
+  .smileimg {
+    padding-left: 2em;
+    margin-top: 20em;
+  }
+
+  .captiontwo {
+    padding-left: 3em;
+  }
+
+}
+
+@media all and (min-width: 1200px) {
+
+  .readme,
+  .knowme,
+  .reachme {
+    padding: 6em 10em;
+  }
+
+  .readme h3,
+  .readme p {
+    padding-right: 20em;
+  }
+
+  .knowme p {
+    padding-left: 20em;
+  }
+
+  .content p {
+    padding: .5em;
+  }
+
+  .reachme-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* GRAPH TIMELINE KNOW ME */
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
