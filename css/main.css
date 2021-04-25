@@ -576,13 +576,6 @@ footer,
 
 @media all and (min-width: 768px) {
 
-  .latest-item,
-  .seeme-item,
-  .history-item,
-  .tttr-item {
-    display: flex;
-  }
-
 
   .reachme h2,
   .readme h2 {
