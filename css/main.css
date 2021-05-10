@@ -135,6 +135,15 @@ textarea {
     font-family: 'courier prime', monospace;
   }
 
+  a {
+    text-decoration: none;
+    color: #A61123;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
   .responsive {
     width: 100%;
     height: auto;
@@ -154,6 +163,9 @@ textarea {
    .btn a {
      text-decoration: none;
      color: #F7EDE2;
+   }
+   .btn:hover {
+     cursor: pointer;
    }
 
 
@@ -190,9 +202,9 @@ h1 span {
 .topnav a {
   float: right;
   display: block;
-  color: #C8AD4E;
+  color: #A61123;
   text-align: center;
-  padding: .5em 2.75em 0 0;
+  padding: .75em 2.75em 0 0;
   text-decoration: none;
   font-size: 1em;
   text-transform: uppercase;
@@ -204,7 +216,7 @@ h1 span {
 }
 
 .topnav a:hover {
-  color: #C8AD4E;
+  color: #A61123;
 }
 
 .topnav a.active {
