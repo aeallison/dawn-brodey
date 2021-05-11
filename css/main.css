@@ -642,7 +642,13 @@ audio {
   .readme,
   .knowme,
   .reachme {
-    padding: 6em 10em;
+    padding: 8em 17em;
+  }
+
+  .readme h2,
+  .knowme h2,
+  .reachme h2 {
+    padding-bottom: 3em;
   }
 
   .readme h3,
@@ -652,10 +658,6 @@ audio {
 
   .knowme p {
     padding-left: 20em;
-  }
-
-  .content p {
-    padding: .5em;
   }
 
   .reachme-item {
