@@ -35,26 +35,66 @@
 <body> <!--   HEADER   -->
 
   <header class="header-wrapper">
-    <div class="title">
-      <h1><a href="../index.html">Dawn Brodey&verbar;<span>funny trashy cool</span></a></h1>
-      <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>  
-        <a href='../index.html#watchme'>Shows</a>
-        <a href='../index.html#videos'>Videos</a>
-        <a href='../index.html#readme'>Blog</a>
-        <a href='../index.html#knowme'>Bio</a>
-        <a href='#reachme-reels'>Contact</a>
-        <a href='#voice-reels'>Reels</a>
-      </div>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>  
+      <a href='../#shows'>Podcast</a>
+      <a href='../#readme'>Blog</a>
+      <a href='../#knowme'>Bio</a>
+      <a href='../#reachme'>Contact</a>
+      <a href='#index.html' target="_blank">Videos &plus; Reels</a>
     </div>
-    <img class="header-img responsive" src="../img/brodey-reels-header.jpg" alt="Dawn Brodey Smirking">
+    <div class="title-container">
+      <div class="title-items">
+        <h1><a href="index.html">Dawn Brodey</a></h1>
+        <h4>Funny Trashy Cool</h4>
+        <h3><span>comedian&mdash;actor&mdash;writer</span></h3>
+      </div> 
+    </div>
+
   </header>
 
 <!--- MAIN AREA -->
 
   <main class="main-reels-wrapper">
+
+    <!-- VIDEOS -->
+    
+    <div id="videos" class="videos">
+      <h2>Videos</h2>
+      <div class="videos-wrapper">
+        <div class="videos-item latest-item latest">
+          <h3>Laugh Factory</h3>
+          <p>Hollywood, California</p>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/_gT-df3ZMqo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <form target="_blank" action="https://m.youtube.com/channel/UCp-_zEkj6m1F6eGtVikHNhg/videos">
+              <button class="btn history-btn" type="submit">more videos</button> 
+        </div>
+        <div class="videos-item history-item history">
+          <h3>Historical Perspectives</h3>
+          <p>Grab a drink &mdash; learn some history in 5ish minutes...</p>
+          <div class="video-container">
+            <iframe class="history-vid" src="https://www.youtube.com/embed/ndlUkiKvLXc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+            <form target="_blank" action="https://m.youtube.com/channel/UCp-_zEkj6m1F6eGtVikHNhg/videos">
+              <button class="btn history-btn" type="submit">rabbit hole to more episodes</button>
+            </form>    
+          </div>
+          <div class="videos-item tttr-item tttr">
+            <h3>Trailer Trash Talent Revue</h3>
+            <p>A mix of music and comedy, improvisation and interviews &mdash; created by Dawn Brodey.</p>
+            <div class="video-container">
+              <iframe class="tttr-vid" src="https://www.youtube.com/embed/iQe8druZG9w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <form target="_blank" action="./trailertrash/index.html">
+                <button class="btn tttr-btn" type="submit" value="Go to Trailer Trash Page">show info</button>
+              </form>
+          </div>
+      </div>  
+    </div>
 
     <!-- VOICE REELS -->
 
@@ -148,7 +188,7 @@
   </main>
 
   <footer>
-    <img class="reachme-img responsive" src="../img/dawn-joint2.jpg" alt="Dawn Smoking">
+    <img class="reachme-img" src="../img/dawn-joint2.jpg" alt="Dawn Smoking">
   </footer>
   
 

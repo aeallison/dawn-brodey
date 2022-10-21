@@ -27,28 +27,7 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -69,19 +48,13 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
-  resize: vertical;
-}
+
 
 /* ==========================================================================
    Author's custom styles
@@ -97,42 +70,51 @@ textarea {
 /***   BASE STYLES  ***/
 
   body {
-    background: #F7EDE2;
-    font-family: 'poppins', sans-serif;
+    font-family: 'quicksand', sans-serif;
     font-weight: 400;
-    color: #A61123;
+    color: #222019;
     max-width: 100%;
   }
 
-  figure {
-    margin: 0;
-  }
+  
 
   h1 {
     color: #A61123;
-    font-family: 'courier prime', monospace;
     text-transform: uppercase;
-    font-size: 1.5em;
-    padding-left: .25em;
+    font-size: 2em;
+    letter-spacing: 2px;
   }
 
   h2 {
-    color: #656D2F;
-    padding: 1em 0;
+    color: #C8AD4E;
+    font-size: 2em;
     text-transform: uppercase;
     text-align: center;
+    margin: 2em;
   }
   
   
   h3 {
-    color: #C8AD4E;
     text-transform: uppercase;
-    padding: 1.5em 0;
+    color: #A61123;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 2.25em;
+  }
+
+
+  h4 {
+    color: #c8ad4e;
+    font-weight: 400;
   }
 
   h4,
   p {
     font-family: 'courier prime', monospace;
+  }
+
+  p {
+    font-size: 1em;
   }
 
   a {
@@ -146,11 +128,12 @@ textarea {
 
   .responsive {
     width: 100%;
+    max-width: 450px;
     height: auto;
   }
 
   .btn {
-    background-color: #656D2F;
+    background-color: #222019;
     color: #F7EDE2;
     border: none;
     border-radius: 4px;
@@ -171,26 +154,26 @@ textarea {
 
 /** HEADER **/
 
-.title {
+.title-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
 }
 
-.title p {
-  margin: 0 .25em;
+.title-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
 }
 
-h1 span {
-  font-size: .60em;
-  text-transform: uppercase;
-  color: #C8AD4E;
+h3 span {
+  font-weight: 400;
+  letter-spacing: .75px;
 }
 
-.header-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /*** NAVIGATION ***/
 
@@ -235,23 +218,31 @@ h1 span {
 /** MAIN AREA **/
 
 
-/** WATCH ME SEE ME **/
+/** WATCH ME SHOWS **/
 
-.watchme-wrapper,
-.videos-wrapper {
-  margin: 1em 0;
-}
-
-h2 span {
-  color: #A61123;
-  font-family: "courier prime", monospace;
-}
-
-.shows,
-.videos {
+.shows-heading {
   display: flex;
-  flex-flow: column;
-  margin: 1em 1em 2em; 
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+}
+
+.showsimg {
+  width: 100%;
+}
+
+.new-episodes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-episodes h2 {
+  margin: 2em 0 .75em 0;
+}
+
+.new-episodes span {
+  font-size: .65em;
 }
 
 .show-item {
@@ -259,10 +250,14 @@ h2 span {
   flex-flow: column;
   align-items: center;
   background-color: #fff;
-  margin: .5em;
-  padding: .5em;
-  border-radius: 10px;
-  border: 1px solid #C8AD4E;
+  margin: 2.5em;
+  padding: 1em;
+  border-radius: 5px;
+  border: 3px solid #C8AD4E;
+}
+
+.show-item h2 {
+  margin-bottom: .5em;
 }
 
 .show-item h3 {
@@ -278,6 +273,111 @@ h2 span {
 .tix-btn {
   font-size: .75em;
 } 
+
+
+
+/** READ ME **/
+
+.readme-wrapper {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  padding: 2em;
+}
+
+.readme a {
+  font-family: 'courier prime', monospace;
+  text-decoration: underline;
+}
+
+.readme p,
+.knowme p {
+  text-align: justify;
+  padding-bottom: 1.5em;
+}
+
+.readme h4 {
+  font-size: 1.14em;
+}
+
+
+/** KNOW ME **/
+
+.knowme-wrapper {
+  display: flex;
+  flex-flow: column;
+  padding: 2em;
+}
+
+/* TIMELIME HEADING */
+
+.cd-horizontal-timeline h3 {
+  margin-left: 5em;
+}
+
+
+/** CONTACT **/
+
+.contact-wrapper {
+  padding: 2em;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.agent-box,
+.mgmt-box,
+.dawn-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+
+
+/** FOOTER **/
+
+footer {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  padding: 1.5em;
+}
+
+.social-icons {
+  margin: 1em 0;
+  display: flex;
+}
+
+.social-icons i {
+  color: #C8AD4E;
+  font-size: 1.5em;
+  padding: 0 .25em;
+}
+
+.reachme-img {
+  width: 100%;
+  height: auto;
+}
+
+.copyright {
+  text-align: center;
+  padding: 2em 0;
+}
+
+
+
+/******** REELS PAGE STYLES ********/
+
+.header-img {
+  display: flex;
+  justify-content: center;
+}
 
 /** VIDEOS **/
 
@@ -318,84 +418,6 @@ h2 span {
 .videos-item p {
   padding: 1em;
 }
-
-/** READ ME **/
-
-.readme-wrapper {
-  display: flex;
-  flex-flow: column;
-  background-color: #fff;
-  padding: 2em;
-}
-
-.readme h3 {
-  padding-bottom: .3em;
-}
-
-.readme a {
-  font-family: 'courier prime', monospace;
-  text-decoration: underline;
-}
-
-.readme p,
-.knowme p {
-  text-align: justify;
-  padding-bottom: 1.5em;
-}
-
-.readme h4 {
-  font-size: 1.14em;
-}
-
-
-/** KNOW ME **/
-
-.knowme-wrapper {
-  display: flex;
-  flex-flow: column;
-  padding: 2em;
-}
-
-/* TIMELIME HEADING */
-
-.cd-horizontal-timeline h3 {
-  margin-left: 5em;
-}
-
-/** FOOTER REACH ME **/
-
-footer,
-.reachme {
-  display: flex;
-  flex-flow: column;
-  background-color: #fff;
-  padding: 1.5em;
-}
-
-.reachme h3 {
-  padding: .5em 0;
-}
-
-.social-icons {
-  margin: 1em 0;
-  display: flex;
-}
-
-.social-icons i {
-  color: #656d2f;
-  font-size: 1.5em;
-  padding: 0 .25em;
-}
-
-.reachme-img {
-  width: 100%;
-  height: auto;
-}
-
-
-
-/******** REELS PAGE STYLES ********/
-
 
 .voice-reels,
 .video-reels {
@@ -569,21 +591,30 @@ audio {
 
 @media all and (min-width: 768px) {
 
-  .shows,
-  .videos-wrapper {
+/*** SHOWS HEADING ***/  
+  .shows-heading {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 2em 0;
-  } 
-
-  .show-item,
-  .videos-item {
-    align-items: center;
-    width: 45%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2em;
   }
 
-  .reachme h2,
+  .previous-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+/*** CONTACT SECTION ***/
+
+  .contact-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .readme h2 {
     text-align: end;
   }
@@ -611,6 +642,12 @@ audio {
 
 /***** REELS TABLET STYLES *****/
 
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .voice-reels-wrapper,
   .video-reels-wrapper {
     flex-flow: row wrap;
@@ -627,26 +664,29 @@ audio {
 
 @media all and (min-width: 1200px) {
 
+  .shows-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2em;
+  }
+
+  .previous-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .topnav a {
     padding: 1em 1.5em 0;
   }
 
-  .shows {
-    margin: 2em 8em;
-  }
-
-  .show-item,
-  .videos-item {
-    align-items: center;
-    width: 35%;
-    margin: 2em;
-  }
 
   .readme,
   .knowme,
   .reachme {
-    padding: 8em 17em;
+    padding: 8em 10em;
   }
 
   .readme h2,

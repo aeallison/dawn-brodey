@@ -22,8 +22,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/timeline.css">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   
@@ -36,104 +37,153 @@
 <body> <!--   HEADER   -->
 
   <header class="header-wrapper">
-    <div class="title">
-      <h1><a href="index.html">Dawn Brodey&verbar;<span>funny trashy cool</span></a></h1>
+    <div class="title-container">
+      <div class="title-items">
+        <h1><a href="index.html">Dawn Brodey</a></h1>
+        <h4>Funny Trashy Cool</h4>
+        <h3><span>comedian &mdash; actor &mdash; writer</span></h3>
+      </div>
+      
       <div class="topnav" id="myTopnav">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>  
-        <a href='#watchme'>Shows</a>
-        <a href='#videos'>Videos</a>
+        <a href='#shows'>Podcast</a>
         <a href='#readme'>Blog</a>
         <a href='#knowme'>Bio</a>
-        <a href='#reachme'>Contact</a>
-        <a href='./reels/index.html' target="_blank">Reels</a>
+        <a href='#contact'>Contact</a>
+        <a href='./reels/index.html' target="_blank">Videos &plus; Reels</a>
       </div>
+      
     </div>
-    <img class="header-img responsive" src="img/dawnheader2.jpg" alt="dawn-laughing">
+
   </header>
 
   <!-- MAIN CONTENT -->
 
   <main class="main-wrapper"> <!--MAIN CONTENT BEGINS-->
 
-    <section id='watchme' class="watchme-wrapper">
-      <h2><span>Upcoming Shows</span></h2>
-        <div id='seeme' class="seeme-item seeme">
-          <div class="shows">
-            <div class="show-item showtwo">
-              <h3>Uncle Clyde's Comedy Contest</h3>
-              <p>Wednesday June 2nd &commat; 7:00pm</p>
-              <p>Virtual &commat; Flappers Comedy Club&mdash; Burbank&comma;CA</p>
-              <form action="https://www.flapperscomedy.com/shows/uncle-clydes-comedy-contest-round-four-week-four/61835/">
-                <button class="btn tix-btn" type="submit">tickets</button>
-              </form>
+    <section id='shows' class="shows-wrapper">
+        <div class="shows-heading">
+          <img class="showsimg responsive" src="img/bluejacket-original.jpg" alt="dawn-pose-bluejacket">
+
+            <div class="new-episodes">
+              <h2>HILF: History I'd Like to F*ck<br><span>The Podcast</span></h2> 
+                <p>Hosted By: Dawn Brodey</p>
+                  <h3>Latest Episode</h3>
+                  <div class="show-item ep18">
+                    <h3>HILF 18: The Iranian Revolution with Zari Faripour</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/2b1818dc-4ac0-4ced-a87e-d3e4770b68cf?dark=false"></iframe>
+                  </div>
+                    
             </div>
-            <div class="show-item showthree">
-              <h3>Celebrity Drop-in</h3>
-              <p>Friday June 11th &commat; 8:00pm</p>
-              <p>LIVE &commat; Flappers Comedy Club&mdash; Burbank&comma;CA</p>
-              <form action="https://venturaharborcomedyclub.com/index.cfm">
-                <button class="btn tix-btn" type="submit">tickets</button>
-              </form>  
-            </div>
+        </div>
+
+          <div class="previous-episodes">
+            <h3>Previous Epidsodes</h3>
+              <div class="previous-list">
+                <div class="show-item prev ep17">
+                  <h3>HILF 17: Joan of Arc with Lauren Pritchard</h3>
+                  <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/81a851d1-8a93-419a-9604-0f86cf51a4a6?dark=false"></iframe>
+                </div>
+
+                <div class="show-item prev ep16">
+                  <h3>HILF 16: Great Mistakes with Brian Kelly</h3>
+                  <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/87828337-545e-4f73-a309-78ec51a7026a?dark=false"></iframe>
+                </div>
+
+                <div class="show-item prev ep15">
+                  <h3>HILF 15: Salem Witch Trials with Alex Malt</h3>
+                  <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/04551e5d-dd2c-4e1f-9f10-c7ffadc09b4c?dark=false"></iframe>
+                </div>
+
+                <div class="show-item prev ep14">
+                  <h3>HILF 14: Prohibition with Beau Hufford</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/1462f1e9-b697-428e-9974-cd7cdda50214?dark=false"> 
+                    </iframe>
+                </div>
+                  
+                <div class="show-item prev ep13">
+                  <h3>HILF 13: Whiskey Rebellion with Rashid Green</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/d3b48f88-1814-42aa-9cc9-81fbc33bd368?dark=false"> 
+                    </iframe>     
+                </div>
+                
+                <div class="show-item prev ep12">
+                  <h3>HILF 12: Freaks with Christine Blackburn</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/d9184134-a482-456e-8834-f71d80e23709?dark=false">
+                    </iframe>     
+                </div>
+                
+                <div class="show-item prev ep11">
+                  <h3>HILF 11: Stand&mdash;Comedy with Wayne Federman</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/2a70a1a8-1a6a-43a8-9c3b-34381ff4a78b?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep10">
+                  <h3>HILF 10: Pirates Part 2 with Shelby Young</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/af89e1d9-27b8-4d69-b6e2-4e279294cc60?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep9">
+                  <h3>HILF 09: Pirates with Shelby Young</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/7e04d32a-22f6-441f-8598-64da6611a8d3?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep8">
+                  <h3>HILF 08: The Spice Trade with Wayne Wilderson</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/a54f9859-7004-4e20-9c0b-b8682d4993ce?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep7">
+                  <h3>HILF 07: The F-Word, Part 2 with Ryan Ripple</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/6971d04b-54bc-4c7c-b2dc-27c95cae4cc9?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep6">
+                  <h3>HILF 06: The F-Word with Ryan Ripple</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/b26ec38e-8c21-4b48-8dde-d2c74567b841?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep5">
+                  <h3>HILF 05: Krampus with Andrew Melby</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/496f94c2-0469-49a3-a079-204eb03629ef?dark=false">
+                    </iframe>     
+                </div>
+
+                <div class="show-item prev ep4">
+                  <h3>HILF 04: James K Polk with Meryl Klemow</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/5ea9087b-ce67-4a89-862e-0135da7ffb7f?dark=false">
+                    </iframe>
+                </div>
+
+                <div class="show-item prev ep3">
+                  <h3>HILF 03: DB Cooper with Maile Flanagan</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/ac1aa5e8-2482-4681-9cf4-cf1500e71544?dark=false">   
+                    </iframe>
+                </div>
+
+                <div class="show-item prev ep2">
+                  <h3>HILF 02: John Dillinger with Kat Perkins</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/68c1cf21-e447-47e2-a4af-6190521f14f0?dark=false">
+                    </iframe>
+                </div>
+                    
+                <div class="show-item prev ep1">
+                  <h3>HILF 01: Frankenstein with Helen Shephard</h3>
+                    <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/56533844-c66c-478c-8d59-46c42bb466a2?dark=false">
+                    </iframe>
+                </div>
+              </div>
           </div>
-        </div>
+    </section>
 
-        <div id="videos" class="videos">
-          <h2>Videos</h2>
-          <div class="videos-wrapper">
-            <div class="videos-item latest-item latest">
-              <h3>Laugh Factory</h3>
-              <p>Hollywood, California</p>
-                <div class="video-container">
-                  <iframe src="https://www.youtube.com/embed/_gT-df3ZMqo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <form target="_blank" action="https://m.youtube.com/channel/UCp-_zEkj6m1F6eGtVikHNhg/videos">
-                  <button class="btn history-btn" type="submit">more videos</button> 
-            </div>
-            <div class="videos-item history-item history">
-              <h3>Historical Perspectives</h3>
-              <p>Grab a drink &mdash; learn some history in 5ish minutes...</p>
-              <div class="video-container">
-                <iframe class="history-vid" src="https://www.youtube.com/embed/ndlUkiKvLXc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-                <form target="_blank" action="https://m.youtube.com/channel/UCp-_zEkj6m1F6eGtVikHNhg/videos">
-                  <button class="btn history-btn" type="submit">rabbit hole to more episodes</button>
-                </form>    
-              </div>
-              <div class="videos-item tttr-item tttr">
-                <h3>Trailer Trash Talent Revue</h3>
-                <p>A mix of music and comedy, improvisation and interviews &mdash; created by Dawn Brodey.</p>
-                <div class="video-container">
-                  <iframe class="tttr-vid" src="https://www.youtube.com/embed/iQe8druZG9w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                  <form target="_blank" action="./trailertrash/index.html">
-                    <button class="btn tttr-btn" type="submit" value="Go to Trailer Trash Page">show info</button>
-                  </form>
-              </div>
-          </div>  
-        </div>
-  </section>
-
-  <section id="readme" class="readme-wrapper readme">
-    <h2>Blog</h2>
-    <h3>Blog Overview&colon;</h3>
-    <p>This blog is going to be a mess because it is going to be about life and, perhaps you’ve noticed this too, life is a mess. My life certainly is &mdash; yours (probably) is too. I, however, find it is a mess like gasoline in a puddle &mdash; also kinda pretty.</p>
-    <p>Here I will share observations from my perspective as comedian-mom-historian-Sagittarius-Pescatarian with no Uterus.<br> Welcome.</p>
-    <h3>Latest Blog</h3>
-    <h4>Title&colon; I Fed Her</h4>
-    <p>By&colon; Dawn Brodey</p>
-    <p>both of us suddenly thrust into this raw and scary new world at the exact same time. Both of us screaming. Both of us crying. Both of us struggling to see who the other one was. Before the aliens of latex gloves, sharp points of focused light and antibiotic swabs could come between us, however, I fed her.</p>
-    <a href="https://dawnbrodey-is-here.medium.com/i-fed-her-4c7acbecc53" target="_blank">continue reading&rarr;</a>
-    <br>
-    <h3>More Entries</h3>
-    <h4>Title&colon; New Blog, Who This</h4>
-    <p>By&colon; Dawn Brodey</p>
-    <p>I’m glad you’re here and honored you’re reading. I don’t know who *you* are, of course — it is one of the wonders of writing for the vast and ambiguous internet. Dear Reader,</p>
-    <a href="https://dawnbrodey-is-here.medium.com/new-blog-who-this-f97341467fca" target="_blank">continue reading&rarr;</a>
-  </section>
-        
   <section id="knowme" class="knowme-wrapper knowme">
     <h2>Bio</h2>
     <aside class="knowme-intro">
@@ -260,37 +310,64 @@
     
   </section>
 
-  <section id="reachme" class="reachme-wrapper reachme">
+  <section id="readme" class="readme-wrapper readme">
+    <h2>Blog</h2>
+      <h3>Overview&colon;</h3>
+        <p>This blog is going to be a mess because it is going to be about life and, perhaps you’ve noticed this too, life is a mess. My life certainly is &mdash; yours (probably) is too. I, however, find it is a mess like gasoline in a puddle &mdash; also kinda pretty.</p>
+        <p>Here I will share observations from my perspective as comedian-mom-historian-Sagittarius-Pescatarian with no Uterus.<br> Welcome.</p>
+    <h3>Latest Blog</h3>
+    <h4>Title&colon; I Fed Her</h4>
+    <p>By&colon; Dawn Brodey</p>
+    <p>both of us suddenly thrust into this raw and scary new world at the exact same time. Both of us screaming. Both of us crying. Both of us struggling to see who the other one was. Before the aliens of latex gloves, sharp points of focused light and antibiotic swabs could come between us, however, I fed her.</p>
+    <a href="https://dawnbrodey-is-here.medium.com/i-fed-her-4c7acbecc53" target="_blank">continue reading&rarr;</a>
+    <br>
+    <h3>More Entries</h3>
+    <h4>Title&colon; New Blog, Who This</h4>
+    <p>By&colon; Dawn Brodey</p>
+    <p>I’m glad you’re here and honored you’re reading. I don’t know who *you* are, of course — it is one of the wonders of writing for the vast and ambiguous internet. Dear Reader,</p>
+    <a href="https://dawnbrodey-is-here.medium.com/new-blog-who-this-f97341467fca" target="_blank">continue reading&rarr;</a>
+  </section>
+        
+  
+
+  <section id="contact" class="contact-wrapper">
     <h2>Contact</h2>
-    <aside class="reachme-item">
-        <div class="agent-wrapper">
-          <h3>Agent</h3>
-          <p>Film, Television, or Web/New Media&colon;<br>Minc Talent</p>
-          <p>Theatrical&colon;<br>Mariko&colon; 323-393-0433</p>
-          <p>Commerical&colon;<br>Melissa&colon; 323-320-4116</p>
+    <aside class="contact-items">
+        <div class="agent-mgmt-wrapper">
+          <div class="agent-box">
+            <h3>Agent</h3>
+            <h4>Film &mdash; Television &mdash; Web/New Media&colon;<br>MINC TALENT</h4>
+            <p>Theatrical &mdash; Mariko&colon; 323-393-0433</p>
+            <p>Commerical &mdash; Melissa&colon; 323-320-4116</p>
+          </div>
+          <div class="mgmt-box">
+            <h3>Management</h3>
+            <h4>Bohemia Group&colon;<br>LA &amp; NYC</h4>
+              <p>Kat&colon; 323-462-5800</p>
+          </div>
         </div>
-        <div class="mgmt-wrapper">
-          <h3>Management</h3>
-          <p>Bohemia Group&colon; LA &amp; NYC<br>Kat&colon; 323-462-5800</p>
-        </div>
-        <div class="dawn-wrapper">
+        <div class="dawn-box">
           <h3>Dawn Brodey</h3>
           <p>e&colon;<a href="mailto:dawnbrodey@gmail.com"> dawnbrodey@gmail.com</a></p>
-          <p>c&colon; 612-598-8321</p>
+          <p>c&colon; 612-598-8321</p> 
             <div class="social-icons">
               <a href="https://www.facebook.com/dawn.brodey/" target="_blank"><i class="icons fa fa-facebook-square"></i></a>
               <a href="https://twitter.com/dawn_brodey" target="_blank"><i class="icons fa fa-twitter-square"></i></a>
               <a href="https://www.instagram.com/dawn_brodey/" target="_blank"><i class="icons fa fa-instagram"></i></a>
               <a href="https://www.youtube.com/channel/UCp-_zEkj6m1F6eGtVikHNhg" target="_blank"><i class="icons fa fa-youtube"></i></a>
               <a href="https://www.imdb.com/name/nm2372333/?ref_=fn_al_nm_1" target="_blank"><i class="icons fa fa-imdb"></i></a>
-          </div>
-        </div>
+            </div>
+        </div>        
     </aside>
   </section>
   </main>
 
   <footer>
-    <img class="reachme-img responsive" src="img/dawn-joint2.jpg" alt="Dawn Smoking">
+    <img class="reachme-img" src="img/dawn-joint2.jpg" alt="Dawn Smoking">
+    <div class="copyright">
+      <p>&COPY; 2022 &verbar; Dawn Brodey &verbar; web design a.vibe co</p>
+    </div>
+    
   </footer>
   
 
